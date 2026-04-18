@@ -1,0 +1,28 @@
+.screen { padding: 2rem; max-width: 960px; margin: 0 auto; }
+
+.legend { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 2rem; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem 1.25rem; }
+.legendItem { display: flex; align-items: center; gap: .4rem; font-size: .8rem; color: var(--muted); }
+.legendDot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+.dot_gold   { background: var(--gold);   }
+.dot_teal   { background: var(--teal);   }
+.dot_rust   { background: var(--rust);   }
+.dot_purple { background: var(--purple); }
+.dot_slate  { background: var(--slate);  }
+.dot_pale   { background: var(--border); }
+.dot_green  { background: var(--green);  }
+
+.daySection { margin-bottom: 2rem; }
+.dayLabel { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; color: var(--muted); margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
+
+.blockRow { display: flex; gap: .75rem; align-items: stretch; margin-bottom: .4rem; }
+.blockTime { font-family: var(--font-mono); font-size: .68rem; color: var(--hint); width: 110px; flex-shrink: 0; padding-top: .65rem; text-align: right; line-height: 1.4; }
+.block { flex: 1; border-radius: var(--radius-sm); padding: .65rem 1rem; border-left: 3px solid transparent; }
+.blockLabel { font-size: .85rem; font-weight: 500; line-height: 1.4; }
+.blockNote  { font-size: .76rem; color: var(--muted); margin-top: .2rem; line-height: 1.45; }
+
+.block_creative { background: var(--gold-light);   border-color: var(--gold);   }
+.block_work     { background: var(--slate-light);  border-color: var(--slate);  }
+.block_research { background: var(--teal-light);   border-color: var(--teal);   }
+.block_startup  { background: var(--rust-light);   border-color: var(--rust);   }
+.block_poetry   { background: var(--purple-light); border-color: var(--purple); }
+.block_rest     { background: var(--pale);         border-color: var(--border); }

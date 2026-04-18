@@ -1,0 +1,41 @@
+.screen { padding: 2rem; max-width: 960px; margin: 0 auto; }
+.header { margin-bottom: 2rem; }
+.date { font-family: var(--font-mono); font-size: .7rem; color: var(--muted); letter-spacing: .08em; margin-bottom: .5rem; }
+.title { font-family: var(--font-display); font-size: 2.2rem; line-height: 1.2; }
+.title em { color: var(--gold); font-style: italic; }
+.vision { font-size: .85rem; color: var(--muted); margin-top: .75rem; line-height: 1.6; max-width: 480px; }
+
+.progressRow { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+.progressText { font-family: var(--font-mono); font-size: .7rem; color: var(--muted); white-space: nowrap; }
+.progressTrack { flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.progressFill { height: 100%; background: var(--gold); border-radius: 2px; transition: width .8s cubic-bezier(.4,0,.2,1); }
+
+.energyCard { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; }
+.energyLabel { font-family: var(--font-mono); font-size: .68rem; color: var(--muted); letter-spacing: .08em; margin-bottom: 1rem; }
+.energyOptions { display: flex; gap: .75rem; flex-wrap: wrap; }
+.energyBtn { flex: 1; min-width: 100px; padding: 1rem; border-radius: var(--radius-md); border: 1.5px solid var(--border); background: var(--card); cursor: pointer; text-align: center; transition: all .2s; display: flex; flex-direction: column; align-items: center; gap: .25rem; }
+.energyBtn:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.energyIcon { font-size: 1.3rem; }
+.energyName { font-size: .85rem; font-weight: 500; }
+.energySub { font-size: .72rem; color: var(--muted); }
+.energy_high.energySelected { border-color: var(--gold); background: var(--gold-light); }
+.energy_med.energySelected  { border-color: var(--teal); background: var(--teal-light); }
+.energy_low.energySelected  { border-color: var(--purple); background: var(--purple-light); }
+
+.burnoutBtn { width: 100%; background: var(--rust-light); border: 1px solid rgba(184,76,39,.2); border-radius: var(--radius-md); padding: .85rem 1.25rem; display: flex; align-items: center; gap: .75rem; cursor: pointer; margin-bottom: 1.5rem; transition: all .2s; text-align: left; }
+.burnoutBtn:hover { box-shadow: var(--shadow-sm); }
+.burnoutIcon { font-size: 1.1rem; flex-shrink: 0; }
+.burnoutText { font-size: .83rem; color: var(--rust); }
+.burnoutText span { font-weight: 500; }
+
+.taskGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.taskCard { padding: 1.25rem; transition: all .2s; }
+.taskDone { opacity: .5; }
+.taskTop { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: .65rem; }
+.taskCheck { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: .7rem; flex-shrink: 0; transition: all .2s; }
+.taskCheckDone { background: var(--ink); border-color: var(--ink); color: #fff; }
+.taskTitle { font-size: .95rem; font-weight: 500; margin-bottom: .3rem; line-height: 1.35; }
+.taskDone .taskTitle { text-decoration: line-through; }
+.taskSub { font-size: .8rem; color: var(--muted); line-height: 1.5; margin-bottom: .6rem; }
+.taskMeta { display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: .68rem; color: var(--muted); }
+.taskXP { color: var(--gold); font-weight: 500; }
